@@ -18,7 +18,8 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 3.4'
+  gem 'rspec-activemodel-mocks'
   gem 'byebug', platform: :mri
 end
 
@@ -30,7 +31,9 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~>2.1.0'
+  gem 'capybara', '~>2.4'
 end
+
+gem 'rails-controller-testing'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
